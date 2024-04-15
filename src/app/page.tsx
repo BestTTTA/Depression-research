@@ -1,112 +1,28 @@
-import Image from "next/image";
+import Navbar from "./components/navbar";
+import Discuss from "./components/discuss";
+import Ref from "./components/ref";
+import SidebarFloat from "./components/sidebarFloat"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <main className="flex min-h-screen flex-col items-center">
+      <Navbar />
+      <SidebarFloat />
+      <div className="flex-initial p-4 w-full">
+        <article className="text-wrap">
+          <h1 className="text-[#5C3D20] font-bold text-lg border-b-4 border-[#20558A] py-4">การพัฒนาระบบอินเทอร์เน็ตของสรรพสิ่งสําหรับการวินิจฉัยภาวะซึมเศร้าและโรคซึมเศร้า และพัฒนาแนวทางการรักษาผู้ป่วยซึมเศร้าแบบองค์รวมอย่างมีส่วนร่วมด้วยระบบปัญญาประดิษฐ์</h1>
+        </article>
+        <Discuss topic="บทคัดย่อ" text="โครงการนี้มุ่งพัฒนาต้นแบบระบบอินเทอร์เน็ตของสรรพสิ่งเพื่อตรวจวัดและเก็บบันทึกข้อมูลที่เกี่ยวกับภาวะซึมเศร้าและโรคซึมเศร้า ซึ่งจะช่วยให้การตรวจวินิจฉัยภาวะซึมเศร้าและโรคซึมเศร้าเป็นไปได้อย่างง่ายดายและรวดเร็ว นอกจากนี้ โครงการยังมุ่งสร้างองค์ความรู้พื้นฐานเกี่ยวกับการใช้ข้อมูลจากระบบดังกล่าวเพื่อเพิ่มคุณค่าในด้านสุขภาพจิต โดยการออกแบบและสร้างปัญญาประดิษฐ์ที่สามารถเก็บบันทึกข้อมูลปัจจัยต่างๆ ที่เกี่ยวข้องกับการรักษาโรคซึมเศร้าได้ รวมทั้งพัฒนาต้นแบบปัญญาประดิษฐ์ที่ออกแบบแนวทางการรักษาผู้ป่วยซึมเศร้าแบบองค์รวมที่สอดคล้องกับความต้องการของผู้ป่วย ญาติ และแพทย์ ซึ่งจะช่วยให้การดูแลและการรักษาโรคซึมเศร้าเป็นไปอย่างมีประสิทธิภาพและตอบโจทย์ต่อความต้องการของผู้ที่เกี่ยวข้องได้อย่างเหมาะสม." />
+        <p className="text-sm py-2"><strong>keywords: </strong>Depression, ML(machine learning), IOT</p>
+        <Discuss topic="บทนำ" text="ในยุคปัจจุบันที่เทคโนโลยีดิจิทัลเข้ามามีบทบาทสำคัญในทุกมิติของชีวิต การพัฒนาระบบอินเทอร์เน็ตของสรรพสิ่งเพื่อตอบโจทย์ปัญหาสุขภาพจิตกลายเป็นสิ่งจำเป็นอย่างยิ่ง โครงการนี้จึงได้ถูกออกแบบมาเพื่อพัฒนาต้นแบบระบบที่สามารถตรวจวัดและเก็บบันทึกข้อมูลที่เกี่ยวข้องกับภาวะซึมเศร้าและโรคซึมเศร้า ซึ่งจะช่วยให้การตรวจวินิจฉัยโรคเป็นไปได้ง่ายและรวดเร็วยิ่งขึ้น
+นอกจากนี้ โครงการยังมุ่งมั่นที่จะสร้างองค์ความรู้พื้นฐานจากข้อมูลที่ได้จากระบบเพื่อส่งเสริมสุขภาวะด้านสุขภาพจิตให้ดียิ่งขึ้น โดยการออกแบบและสร้างปัญญาประดิษฐ์ที่สามารถบันทึกข้อมูลปัจจัยต่าง ๆ ที่มีผลต่อการรักษาโรคซึมเศร้าได้ เพื่อตอบสนองความต้องการของผู้ป่วย ญาติ และแพทย์อย่างมีประสิทธิภาพ นอกจากนี้ ยังมีการพัฒนาต้นแบบปัญญาประดิษฐ์เพื่อออกแบบแนวทางการรักษาแบบองค์รวมที่สามารถปรับให้เข้ากับสถานการณ์และความต้องการของแต่ละบุคคลได้ ซึ่งจะช่วยให้การดูแลรักษาโรคซึมเศร้าเป็นไปอย่างเหมาะสมและมีประสิทธิผลมากขึ้น." />
+        <Discuss topic="วัสดุและวิธีการ" text="การพัฒนาต้นแบบระบบอินเทอร์เน็ตของสรรพสิ่งสำหรับตรวจวัดและเก็บบันทึกข้อมูล: การดำเนินงานนี้เป็นหลักในการออกแบบและพัฒนาต้นแบบที่สามารถตรวจจับและบันทึกข้อมูลที่เกี่ยวข้องกับภาวะซึมเศร้า ใช้อุปกรณ์ IoT และ smartwatch ในการเก็บข้อมูลการเต้นของหัวใจ และการบันทึกใบหน้าโดยใช้กล้องบันทึกภาพและซอฟต์แวร์ต่างๆ สำหรับการประมวลผลข้อมูล
+การวิเคราะห์ข้อมูลโดยใช้การเรียนรู้ของเครื่อง (Machine Learning): หลังจากที่ข้อมูลถูกบันทึกไว้, ข้อมูลจะถูกนำมาวิเคราะห์โดยใช้โมเดลการเรียนรู้ของเครื่องเพื่อพัฒนาความสามารถในการทำนายภาวะซึมเศร้าจากข้อมูลที่ได้รับ โดยใช้เทคนิคต่างๆ เช่น haarcascade_frontalface_default.xml สำหรับการตรวจจับใบหน้า." />
+        <Discuss topic="สรุป" text="ผลการทดลองใช้ต้นแบบระบบอินเทอร์เน็ตของสรรพสิ่งสำหรับตรวจวัดและเก็บบันทึกข้อมูล: รวมถึงการใช้งานอุปกรณ์ต่างๆ เช่น Smart watch ในการเก็บข้อมูลการเต้นของหัวใจและใบหน้า ผลจากการทดลองได้แสดงให้เห็นว่าข้อมูลสามารถบันทึกและส่งออกมาในรูปแบบไฟล์ csv ได้.
+การวิเคราะห์ข้อมูลร่วมกับผลการตรวจวินิจฉัยภาวะซึมเศร้าและโรคซึมเศร้า: การวิเคราะห์ข้อมูลทำให้ทราบถึงประสิทธิภาพของโมเดลการเรียนรู้ของเครื่อง ซึ่งผลการทดลองแสดงใน Confusion Matrix ได้ชี้ให้เห็นถึงระดับความแม่นยำที่สูง.
+ผลการนำมาใช้พัฒนาต้นแบบโปรแกรมสำหรับตรวจสอบความเคลื่อนไหวบนใบหน้าของแต่ละอารมณ์: โดยใช้ yolo v5 ในการตรวจจับการเคลื่อนไหวของใบหน้า ผลที่ได้จากการนำโมเดลการเรียนรู้ของเครื่องที่พัฒนาขึ้นมาใช้จริง มีความแม่นยำอยู่ที่ 0.65-0.94 ขึ้นอยู่กับปัจจัยต่างๆ เช่น ระดับแสงสว่างและคุณภาพของกล้องที่ใช้งาน.
+การสร้างเครือข่ายความร่วมมือ: มีการเผยแพร่และถ่ายทอดเทคโนโลยีการวิจัยนี้ผ่านงานนิทรรศการของมหาวิทยาลัย และการสร้างเครือข่ายความร่วมมือกับผู้ที่สนใจ." />
+        <Ref />
       </div>
     </main>
   );
