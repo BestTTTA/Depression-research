@@ -7,7 +7,7 @@ const DownloadFile = () => {
     };
 
     return (
-        <button onClick={handleDownload} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <button onClick={handleDownload} className="bg-[#F3541C] hover:bg-white hover:text-[#F3541C] text-white font-bold py-2 px-4 rounded">
             Download File
         </button>
     );
