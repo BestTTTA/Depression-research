@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans_Thai } from 'next/font/google'
 import "./globals.css";
 
-const inter = Noto_Sans({ subsets: ["latin"], weight: "400" });
+const noto_sans_thai = Noto_Sans_Thai({ weight: '400', subsets: ['thai'] })
 
 export const metadata: Metadata = {
   title: "Depression Face Detection",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={noto_sans_thai.className}>{children}</body>
     </html>
   );
 }

@@ -1,15 +1,13 @@
 import Navbar from "./components/navbar";
 import Discuss from "./components/discuss";
 import Ref from "./components/ref";
-import SidebarFloat from "./components/sidebarFloat"
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <Navbar />
-      <SidebarFloat />
-      <div className="flex-initial p-4 w-full">
+      <div className="flex-initial p-4 w-full mt-16">
         <article className="text-pretty">
           <h1 className="text-[#5C3D20] font-bold text-lg border-b-4 border-[#F3541C] py-4">การพัฒนาระบบอินเทอร์เน็ตของสรรพสิ่งสําหรับการวินิจฉัยภาวะซึมเศร้าและโรคซึมเศร้า และพัฒนาแนวทางการรักษาผู้ป่วยซึมเศร้าแบบองค์รวมอย่างมีส่วนร่วมด้วยระบบปัญญาประดิษฐ์</h1>
         </article>
